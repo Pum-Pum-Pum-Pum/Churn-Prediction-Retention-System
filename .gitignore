@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Data artifacts
+artifacts/splits/
+reports/figures/
+
+
+# Local environment files
+.env
+.env.*
+
+# Logs
+*.log
+
+#Data
+creditcard.csv
+.clinerules
+
+Credit_Card_Fraud_Detection_Interview_Info.md
+
+#Notebook
+.ipynb
