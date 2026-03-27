@@ -28,7 +28,7 @@ Thumbs.db
 # Data artifacts
 artifacts/splits/
 reports/figures/
-
+EDA_Reference/
 
 # Local environment files
 .env
