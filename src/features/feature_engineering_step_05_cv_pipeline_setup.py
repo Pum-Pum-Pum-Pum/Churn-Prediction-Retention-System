@@ -81,13 +81,5 @@ def main():
     print("\n=== BASELINE MODEL PIPELINE ===")
     print(model)
 
-    print("\n=== WHY THIS SETUP ===")
-    print("1. Test set remains untouched until final evaluation.")
-    print("2. Cross-validation happens only on training data.")
-    print("3. Preprocessing is fit inside each fold, preventing leakage.")
-    print("4. Logistic regression gives an interpretable baseline.")
-    print("5. This becomes the benchmark for later tree-based challengers.")
-
-
 if __name__ == "__main__":
     main()
