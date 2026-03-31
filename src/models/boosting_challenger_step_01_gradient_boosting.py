@@ -97,12 +97,5 @@ def main():
         print(metric, ":", round(results_df[f"train_{metric}"].mean(), 4))
         print(metric, "std:", round(results_df[f"train_{metric}"].std(), 4))
 
-    print("\n=== WHAT TO COMPARE ===")
-    print("1. Does Gradient Boosting beat logistic baseline on ROC-AUC, recall, and F1?")
-    print("2. Does it outperform Random Forest while controlling overfitting better?")
-    print("3. Is train-vs-test gap acceptable?")
-    print("4. Is this now the strongest challenger family so far?")
-
-
 if __name__ == "__main__":
     main()
