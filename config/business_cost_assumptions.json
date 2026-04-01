@@ -1,0 +1,8 @@
+{
+  "assumptions_status": "template_needs_user_input",
+  "false_positive_cost": null,
+  "false_negative_cost": null,
+  "true_positive_benefit": null,
+  "retention_team_capacity_per_cycle": null,
+  "notes": "User/business input required before cost-based threshold optimization."
+}

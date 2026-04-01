@@ -1,0 +1,82 @@
+{
+  "dataset_name": "baseline_model_input_v1",
+  "target_column": "churn_value",
+  "expected_columns": [
+    "tenure_months",
+    "monthly_charges",
+    "total_charges_clean",
+    "contract",
+    "internet_service",
+    "online_security",
+    "online_backup",
+    "device_protection",
+    "tech_support",
+    "payment_method",
+    "paperless_billing",
+    "partner",
+    "dependents",
+    "senior_citizen",
+    "churn_value"
+  ],
+  "numeric_columns": [
+    "tenure_months",
+    "monthly_charges",
+    "total_charges_clean",
+    "paperless_billing",
+    "partner",
+    "dependents",
+    "senior_citizen"
+  ],
+  "categorical_columns": [
+    "contract",
+    "internet_service",
+    "online_security",
+    "online_backup",
+    "device_protection",
+    "tech_support",
+    "payment_method"
+  ],
+  "allowed_category_values": {
+    "contract": [
+      "Month-to-month",
+      "One year",
+      "Two year"
+    ],
+    "internet_service": [
+      "Fiber optic",
+      "DSL",
+      "No"
+    ],
+    "online_security": [
+      "Yes",
+      "No",
+      "No internet service"
+    ],
+    "online_backup": [
+      "Yes",
+      "No",
+      "No internet service"
+    ],
+    "device_protection": [
+      "Yes",
+      "No",
+      "No internet service"
+    ],
+    "tech_support": [
+      "Yes",
+      "No",
+      "No internet service"
+    ],
+    "payment_method": [
+      "Electronic check",
+      "Mailed check",
+      "Bank transfer (automatic)",
+      "Credit card (automatic)"
+    ]
+  },
+  "missing_value_rules": {
+    "total_charges_clean": "If raw total_charges is blank and tenure_months == 0, set total_charges_clean = 0. Otherwise numeric median imputation in pipeline.",
+    "categorical": "Most frequent imputation in pipeline if required."
+  },
+  "notes": "Structural categories like 'No internet service' must be preserved, not collapsed into 'No'."
+}

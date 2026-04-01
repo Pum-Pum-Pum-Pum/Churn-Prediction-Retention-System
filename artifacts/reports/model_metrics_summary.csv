@@ -1,0 +1,5 @@
+model_name,threshold,dataset,accuracy,precision,recall,f1,roc_auc,tp,fp,fn,tn,status,notes
+logistic_regression_baseline,0.6,holdout_test,0.7715,0.5537,0.7166,0.6247,0.8477,268.0,216.0,106.0,819.0,official_baseline,Balanced business threshold chosen from threshold review
+random_forest_untuned,0.5,holdout_test,0.7693,0.5495,0.7273,0.626,0.8493,272.0,223.0,102.0,812.0,challenger,Untuned RF benchmark
+random_forest_tuned,0.5,holdout_test,0.7672,0.5434,0.7701,0.6372,0.8512,288.0,242.0,86.0,793.0,leading_challenger,Best RF after tuning on recall
+gradient_boosting,,cv_mean,0.808,0.6629,0.5639,0.6093,0.8625,,,,,challenger_not_selected,Strong ROC-AUC but weaker recall for churn objective
