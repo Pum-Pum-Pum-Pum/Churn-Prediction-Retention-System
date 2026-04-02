@@ -136,11 +136,6 @@ def main():
             print("No threshold satisfies capacity.")
 
     print("\n=== INTERPRETATION CHECKPOINT ===")
-    print("1. Does the recommended threshold shift across scenarios?")
-    print("2. Which scenario pushes threshold lower to catch more churners?")
-    print("3. Which scenario pushes threshold higher due to cost or capacity pressure?")
-    print("4. This is why threshold choice must be tied to business assumptions.")
-
 
 if __name__ == "__main__":
     main()

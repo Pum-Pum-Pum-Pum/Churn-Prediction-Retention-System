@@ -1,0 +1,31 @@
+{
+  "endpoint_name": "predict_churn",
+  "model_artifact": "artifacts/models/logistic_baseline_pipeline.joblib",
+  "input_schema": {
+    "tenure_months": "int",
+    "monthly_charges": "float",
+    "total_charges_clean": "float",
+    "contract": "string",
+    "internet_service": "string",
+    "online_security": "string",
+    "online_backup": "string",
+    "device_protection": "string",
+    "tech_support": "string",
+    "payment_method": "string",
+    "paperless_billing": "int",
+    "partner": "int",
+    "dependents": "int",
+    "senior_citizen": "int"
+  },
+  "output_schema": {
+    "churn_probability": "float",
+    "predicted_label": "int",
+    "threshold_used": "float",
+    "model_version": "string"
+  },
+  "notes": [
+    "Input must match baseline_model_input_v1 schema exactly.",
+    "Structural categories such as 'No internet service' must be preserved.",
+    "Output threshold should default to business-approved threshold policy."
+  ]
+}
