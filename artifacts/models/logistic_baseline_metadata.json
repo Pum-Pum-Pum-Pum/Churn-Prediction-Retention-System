@@ -1,0 +1,38 @@
+{
+  "model_version": "logistic_baseline_v1",
+  "model_family": "logistic_regression",
+  "artifact_path": "C:\\OC\\AI\\EDA\\03_Customer_Churn_Prediction_and_Retention_Decision_System\\artifacts\\models\\logistic_baseline_pipeline.joblib",
+  "input_file": "C:\\OC\\AI\\EDA\\03_Customer_Churn_Prediction_and_Retention_Decision_System\\data\\processed\\baseline_model_input.csv",
+  "threshold": 0.6,
+  "target_column": "churn_value",
+  "numeric_features": [
+    "tenure_months",
+    "monthly_charges",
+    "total_charges_clean",
+    "paperless_billing",
+    "partner",
+    "dependents",
+    "senior_citizen"
+  ],
+  "categorical_features": [
+    "contract",
+    "internet_service",
+    "online_security",
+    "online_backup",
+    "device_protection",
+    "tech_support",
+    "payment_method"
+  ],
+  "metrics": {
+    "accuracy": 0.7715,
+    "precision": 0.5537,
+    "recall": 0.7166,
+    "f1": 0.6247,
+    "roc_auc": 0.8477,
+    "tp": 268,
+    "fp": 216,
+    "fn": 106,
+    "tn": 819
+  },
+  "notes": "Official baseline deployment artifact. Threshold chosen from business-cost operating policy."
+}
