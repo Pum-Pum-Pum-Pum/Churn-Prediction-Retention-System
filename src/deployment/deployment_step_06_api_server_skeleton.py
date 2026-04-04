@@ -6,7 +6,7 @@ from datetime import datetime, UTC
 import hashlib
 import pandas as pd
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 MODEL_PATH = PROJECT_ROOT / 'artifacts' / 'models' / 'logistic_baseline_pipeline.joblib'
@@ -17,6 +17,7 @@ app = FastAPI(title='Churn Prediction API', version='0.1.0')
 
 
 class ChurnRequest(BaseModel):
+    model_config = ConfigDict(extra='forbid')
     tenure_months: int
     monthly_charges: float
     total_charges_clean: float

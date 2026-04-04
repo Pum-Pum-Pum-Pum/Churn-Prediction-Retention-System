@@ -1,0 +1,8 @@
+{
+  "reference_name": "baseline_prediction_behavior_v1",
+  "model_version": "logistic_baseline_v1",
+  "reference_dataset": "baseline_model_input.csv scored in batch mode",
+  "mean_churn_probability": 0.4084,
+  "predicted_positive_rate": 0.3385,
+  "notes": "Starter prediction-behavior baseline for monitoring comparisons. Replace with true historical production reference when available."
+}

@@ -83,7 +83,7 @@ def test_predict_extra_field_behavior():
     print("\n[test_predict_extra_field_behavior] payload:", payload)
     print("[test_predict_extra_field_behavior] status:", response.status_code)
     print("[test_predict_extra_field_behavior] body:", response.text)
-    assert response.status_code in [200, 422]
+    assert response.status_code == 422
 
 
 if __name__ == '__main__':
