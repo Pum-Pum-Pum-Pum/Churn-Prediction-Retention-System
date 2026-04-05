@@ -137,3 +137,5 @@ python src/deployment/deployment_step_03_inference_wrapper.py
 ```bash
 python src/monitoring/deployment_step_07_drift_monitoring_starter.py
 ```
+
+This completed the project!
